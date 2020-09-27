@@ -356,16 +356,11 @@ p {
 }
 
 footer {
-  display: flex;
-  bottom: 5px;
-  top: 10px;
-  left: 15px;
-  right: 0;
-}
-
-.copy {
-  margin-left: auto;
-  margin-right: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 /* ============================================= */
@@ -423,6 +418,12 @@ input[type=search] {
 
 img {
   border-radius: 7px;
+  cursor: pointer;
+}
+img:hover {
+  transition-duration: 0.1s;
+  transform: scale(0.97);
+  opacity: 0.8;
 }
 
 /* ============================================= */
