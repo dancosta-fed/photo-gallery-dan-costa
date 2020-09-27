@@ -11,12 +11,20 @@ header {
     align-self: flex-start;
     flex: 1;
     margin-top: 45px;
-    margin-left: 300px;
+    margin-left: 350px;
     padding: 10px;
-    border-color: $basefont;
+    border-radius: 15px;
+    @include search-btn;
+}
+
+input[type=search] {
+    background: $color-box;
+    border: 5px;
+    border-color: complement(#199ad8);
+    box-shadow: -3px $color-shadow;
 }
 
 .avatar {
     margin-left: auto;
-    margin-right: 400px;
+    margin-right: 300px;
 }

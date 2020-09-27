@@ -5,15 +5,9 @@
 .avatar {
     max-width: 10%;
     max-height: 10%;
+    @include img;
   }
-  
-//   .img-frame {
-//     @include dmm;
-//     @include mmw;
-//     padding: 13px;
-//     border: 1px solid #ccc;
-//   }
-  
-//   .img-logo {
-//     @include dmm;
-//   }
+
+img {
+  border-radius: 7px;
+}

@@ -343,15 +343,29 @@ template {
 * {
   font-family: "David Libre", Roboto;
   box-sizing: border-box;
-  background-color: #B4FAD2;
+  background-color: #e7e6e5;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 p {
   line-height: 1.45em;
 }
 
-a {
-  text-decoration: none;
+footer {
+  display: flex;
+  bottom: 5px;
+  top: 10px;
+  left: 15px;
+  right: 0;
+}
+
+.copy {
+  margin-left: auto;
+  margin-right: 15px;
 }
 
 /* ============================================= */
@@ -369,14 +383,29 @@ header {
   align-self: flex-start;
   flex: 1;
   margin-top: 45px;
-  margin-left: 300px;
+  margin-left: 350px;
   padding: 10px;
-  border-color: "David Libre", Roboto;
+  border-radius: 15px;
+}
+#search:hover {
+  transition-duration: 0.1s;
+  transform: scale(1.12);
+  opacity: 0.9;
+}
+#search:focus {
+  border-color: #f9b233;
+}
+
+input[type=search] {
+  background: #bbcfd9;
+  border: 5px;
+  border-color: #d85719;
+  box-shadow: -3px #777;
 }
 
 .avatar {
   margin-left: auto;
-  margin-right: 400px;
+  margin-right: 300px;
 }
 
 /* ============================================= */
@@ -385,6 +414,28 @@ header {
 .avatar {
   max-width: 10%;
   max-height: 10%;
+}
+.avatar:hover {
+  transition-duration: 0.1s;
+  transform: scale(0.97);
+  opacity: 0.8;
+}
+
+img {
+  border-radius: 7px;
+}
+
+/* ============================================= */
+/*                    Grid                       */
+/* ============================================= */
+.grid {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  border-radius: 0.285em;
+  margin: 45px auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
