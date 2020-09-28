@@ -2,9 +2,12 @@
 /*              Search Button                    */
 /* ============================================= */
 
-    const searchBox = document.getElementById('search').value;
+    const searchBox = document.getElementById('search');
     let gallery = document.getElementsByClassName('item-gallery');
     let strainer = search.value.toUpperCase();
+    searchBox.addEventListener("keyup", e => { 
+        const searchString = e.target.value; 
+      });
 
     
     for (let i = 0; i < gallery.length; i++) {
@@ -16,6 +19,4 @@
         } else {
             gallery[i].style.display = 'none';
         }
-
-        console.log(upperCaseInput.includes(strainer));
     }
