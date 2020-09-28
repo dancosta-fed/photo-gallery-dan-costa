@@ -2,22 +2,20 @@
 /*              Search Button                    */
 /* ============================================= */
 
-// function searchGallery() {
-
     const searchBox = document.getElementById('search').value;
-    let element = document.getElementsByClassName('item-gallery');
+    let gallery = document.getElementsByClassName('item-gallery');
+    let strainer = search.value.toUpperCase();
+
     
- 
-  for (i = 0; i < element.length; i++) {
+    for (let i = 0; i < gallery.length; i++) {
+        const upperCaseInput = gallery[i].getAttribute('data-caption').toUpperCase()
+
+        if (upperCaseInput.includes(strainer)) {
+            gallery[i].style.display = 'block';
     
-    if (element[i].getAttribute('data-caption').toLowerCase().includes(searchBox.toLowerCase())) {
-        element[i].classList.remove("non-matched-image")
-    
-    } else {
-      element[i].classList.add("non-matched-image")
+        } else {
+            gallery[i].style.display = 'none';
+        }
+
+        console.log(upperCaseInput.includes(strainer));
     }
- }
- 
-//  console.log(searchGallery);
- 
-// }
