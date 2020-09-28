@@ -11,7 +11,7 @@ $complement: complement($color-background);
 
 // ------ sizes ------ // 
 
-$bradius: 5px;
+$bradius: 10px;
 
 // ------ typography ------ // 
 
@@ -21,4 +21,6 @@ $basewidth: 100%;
 
 // ------ media ------ // 
 
-$breakpoint: 768px;
+$breakpoint-small: 765px;
+$breakpoint-medium: 766px;
+$breakpoint-large: 1015px;

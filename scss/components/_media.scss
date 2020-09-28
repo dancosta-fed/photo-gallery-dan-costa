@@ -1,0 +1,63 @@
+/* ============================================= */
+/*              MEDIA QUERIES                    */
+/* ============================================= */
+
+@media only screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large){
+
+    header {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 45px 75px 0 75px;
+    }
+    
+    #search {
+        padding: 10px;
+        border-radius: 15px;
+        @include search-btn;
+        align-self: center;
+        
+    }
+    
+    input[type=search] {
+        background: $color-box;
+        border: 5px;
+        border-color: complement(#199ad8);
+    }
+    
+    .avatar {
+        max-width: 50%;
+        max-height: 100%;
+        justify-self: end;
+    }
+} 
+
+@media only screen and (max-width: $breakpoint-small){
+
+    header {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 45px 15px 0 15px;
+    }
+    
+    #search {
+        padding: 10px;
+        border-radius: 15px;
+        @include search-btn;
+        align-self: center;
+        
+    }
+    
+    input[type=search] {
+        background: $color-box;
+        border: 5px;
+        border-color: complement(#199ad8);
+    }
+    
+    .avatar {
+        max-width: 50%;
+        max-height: 100%;
+        justify-self: end;
+    }
+}

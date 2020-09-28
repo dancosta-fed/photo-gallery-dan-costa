@@ -1,14 +1,42 @@
 /* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+header {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 45px 275px 0 275px;
+}
+
+#search {
+    padding: 10px;
+    border-radius: 15px;
+    @include search-btn;
+    align-self: center;
+    
+}
+
+input[type=search] {
+    background: $color-box;
+    border: 5px;
+    border-color: complement(#199ad8);
+}
+
+.avatar {
+    max-width: 60%;
+    max-height: 100%;
+    justify-self: end;
+}
+/* ============================================= */
 /*                    Grid                       */
 /* ============================================= */
 
 .grid {
-    max-width: 800px;
+    max-width: 900px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-
-    border-radius: 0.285em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 22px 20px;
     margin: 45px auto;
 }
